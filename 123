@@ -1,0 +1,30 @@
+entered_number = int(input('Введите число от 0 до 10: '))
+if entered_number < 10 and entered_number > 0:
+    print(entered_number ** 2)
+elif entered_number == 10 and entered_number == 0:
+    print(entered_number ** 2)
+else:
+    entered_number = int(input('Введите число от 0 до 10: '))
+if entered_number < 10 and entered_number > 0:
+    print(entered_number ** 2)
+elif entered_number == 10 and entered_number == 0:
+    print(entered_number ** 2)
+    
+    
+#entered_number = int(input('Введите число от 0 до 10: '))
+while entered_number < 10 and entered_number > 0: 
+    print(int(input('Упс! Число не верно')))
+    entered_number = int(input('Введите число от 0 до 10: '))
+
+
+Задание 3 
+#Медицинская анкета
+name_surname = input('Напишите своё имя и фамилию: ')
+weight = int(input('Какой у Вас вес?: '))
+age = int(input('Сколько Вам лет?: '))
+ 
+    
+print('Хорошее состояние', age < 30 and 50 < weight < 120)   
+print('Следует заняться своим здоровьем', age > 30, weight < 50 and weight > 120)     
+print('Требуется врачебный осмотр', age > 40, weight < 50 and weight > 120)   
+print('Требуется врачебный осмотр', age < 10, weight > 50) 
