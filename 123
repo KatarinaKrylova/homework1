@@ -18,6 +18,13 @@ while number > 10 or number < 0:
     number = int(input('Введите число от 0 до 10: '))
     
 #УРАААААА
+number = int(input('Введите число от 0 до 10: '))
+
+while number > 10 or number < 0: 
+    print('Упс! Число неверно.')
+    number = int(input('Введите число от 0 до 10: '))
+if 0 < number < 10:
+    print(number ** 2)
 
 
 Задание 3 
