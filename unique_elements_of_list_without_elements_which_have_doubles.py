@@ -1,45 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
-# Задание 3
-
-
-# In[2]:
-
-
-lst = [2, 5, 8, 2, 12, 12, 4] # создаём список с повторяющимися значениями
-
-
-# In[3]:
-
-
-doubles = [lst[i] for i in range(len(lst)) if  i != lst.index(lst[i])] # создаём список дубликатов
-
-
-# In[4]:
-
-
-unique = set(lst) # создаём множество уникальных элементов исходного списка
-
-
-# In[5]:
-
-
-result = list(set(lst).difference(set(doubles))) # результат равен разности множества уникальных элементов списка и множества дублей
-
-
-# In[6]:
-
-
-result
-
-
-# In[ ]:
-
-
 # Задание 1
 lst1 = [1, 3, 5, 7, 9, 19, 11, 41, 4]
 lst2 = [3, 8, 6, 5, 11]
@@ -49,9 +7,6 @@ for i in lst1:
         res.append(i)
 lst1 = res
 print(res)
-
-
-# In[ ]:
 
 
 # Задание 2
@@ -108,10 +63,6 @@ dict_months = {
 }
 
 print(dict_days.get(list_data[0]) + ' ' + dict_months.get(list_data[1]) + ' ' + list_data[2] + ' года')
-
-
-# In[7]:
-
 
 # Задание 3
 lst = [2, 5, 8, 2, 12, 12, 4] # создаём список с повторяющимися значениями
