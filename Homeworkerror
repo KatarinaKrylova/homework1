@@ -1,0 +1,66 @@
+#Задание1
+
+fruit_one=['apple', 'peach', 'banana', 'pear', 'lemon']
+fruit_two=['watermelon', 'lemon', 'apple', 'pear', 'mandarin']
+intersection_lst=[fruit for fruit in fruit_one if fruit in fruit_two]
+print(intersection_lst)
+#Задание 2
+x=[1,2,4,6,-4,13,10,42,65,1,0,67]
+lst=[number for number in x if (number%3==0 and number>0 and number%4!=0)]
+print(lst)
+
+#Задание3
+import math as m
+numbers=[1,3,7,8,-11,76,324,-55,234,-3,0]
+result=[]
+def fl(lst):
+    for i in lst:
+        if i>=0:
+            result.append(m.sqrt(i))
+        else:
+            result.append(i)
+fl(numbers)
+print(numbers)
+print(result)
+#Задание 4
+while True:
+    try:
+        print(number**2)
+        break
+try:
+    if number==13:
+       raise ValueError
+except ValueError:
+    print('Введено число 13')
+except Exception as e:
+    print(e)
+else:
+    print('Конец')
+
+
+ 
+:
+        x = input('Enter an integer: ')
+    
+ 
+try:
+    if x== 13:
+        raise ValueError
+
+except ValueError:
+    print('Even number. Try again')
+except Exception as e:
+    print(e)
+else:
+    print('Good.')
+
+
+
+
+
+
+
+
+
+
+
