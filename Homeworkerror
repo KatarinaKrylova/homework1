@@ -23,30 +23,18 @@ fl(numbers)
 print(numbers)
 print(result)
 #Задание 4
+
+x = input('Enter your number: ')
 while True:
     try:
-        print(number**2)
-        break
-try:
-    if number==13:
-       raise ValueError
-except ValueError:
-    print('Введено число 13')
-except Exception as e:
-    print(e)
-else:
-    print('Конец')
-
-
- 
-:
+        x = int(x)
+        print(x**2)
+    except Exception:
         x = input('Enter an integer: ')
-    
  
 try:
-    if x== 13:
-        raise ValueError
-
+    if x==13:
+        print('ValueError')
 except ValueError:
     print('Even number. Try again')
 except Exception as e:
@@ -58,9 +46,37 @@ else:
 
 
 
-
-
-
+Пользователь вводит число,
+# если оно четное - выбрасываем исключение ValueError,
+# если оно меньше 0 - TypeError,
+# если оно больше 10 - IndexError.
+# Обрабатываем ошибку, говорим пользователю, в чем его ошибка
+ 
+x = input('Enter your number: ')
+while True:
+    try:
+        x = int(x)
+        break
+    except Exception:
+        x = input('Enter an integer: ')
+ 
+try:
+    if x % 2 == 0:
+        raise ValueError
+    elif x < 0:
+        raise TypeError
+    elif x > 10:
+        raise IndexError
+except ValueError:
+    print('Even number. Try again')
+except TypeError:
+    print('Odd number. Try again')
+except IndexError:
+    print('Not integer. Try again')
+except Exception as e:
+    print(e)
+else:
+print('Good.')
 
 
 
